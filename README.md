@@ -1,7 +1,9 @@
 # TechIndicium
 <h2>  Desafio Engenharia de Dados </h2> 
 
-Observação: os commits realizados no dia 21/02/23 foram para resolver problemas de data type que impedia a inserção dos dados no banco de resultados. Problema solucionado, a pipeline funciona perfeitamente.
+Observação: 
+  - os commits realizados no dia 21/02/23 foram para resolver problemas de data type que impedia a inserção dos dados no banco de resultados. Problema solucionado, a pipeline funciona perfeitamente.
+  - Para ver a pipeline funcionando desde o início, apagar arquivos CSVs dentro da pasta data/csv que já foram gerados e ligar a pipeline.
 
 O data pipeline ficou dividido em 4 tarefas sequenciais: 
   - Get_name_all_tables: pega os nomes de todas as tabelas do banco de dados.
