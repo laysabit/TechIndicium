@@ -53,15 +53,13 @@ def get_tables_data(ti):
             data=rows,
             columns=columns_names
         )
-
-        # Mantendo propriedades do df    
-        df2 = table_name_df.copy()
-        df2.index = df2.index + 1
-        df2.sort_index(inplace=True)
         
         path_to_create = os.path.join( root_path, table_name ) + ".csv"
         
-        df2.to_csv(path_to_create, index=False, header=False, sep="|")
+        #df = table_name_df.fillna(0)
+        
+        table_name_df.dropna().to_csv(path_to_create, index=False, header=False, sep="|")
+        
 
 def insert_in_output_tables(ti):
     names = ti.xcom_pull(task_ids='get_names_of_all_tables')
@@ -89,7 +87,7 @@ def insert_in_output_tables(ti):
         path = os.path.join( root_path, table_name ) + ".csv"
         
         with open(path, 'r') as f:
-            cursor.copy_from(f, table_name, sep='|' , null = '\\\\N', columns = columns_names)
+            cursor.copy_from(f, table_name, sep='|' , columns = columns_names)
         
         pg_conn.commit()
         
