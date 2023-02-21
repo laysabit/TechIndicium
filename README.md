@@ -8,6 +8,8 @@ O data pipeline ficou dividido em 4 tarefas sequenciais:
   
     desafio/dags/airflow_results_db.sql
   - insert_in_output_tables: a função que insere os dados vindos do csv para o banco de respostas. Esse possui uma conexão com o banco de inputs para pegar o nome de cada coluna das tabelas para utilizar no copy_from(), para fazer uma conexão por postgresHook com o banco de respostas e inseri-las com o copy_from().
+  
+  No arquivo /desafio/dag/pipeline.py temos nosso arquivo principal onde está todas as tarefas sequenciais.
 
 <img src = https://user-images.githubusercontent.com/46203330/220226885-a088a002-ca73-43e4-9f2a-d35d8c568412.jpg />
 
