@@ -24,3 +24,5 @@ Todos os arquivos CSVs foram armazenados na pasta de dados, os arquivos CSVs que
 
 <img src = https://user-images.githubusercontent.com/46203330/220230589-ce76c639-01aa-49a1-818a-8c2d42b75e2d.png />
 
+<h3> Docker </h3>
+Para inicializar o projeto, é necessário dar docker-compose up dentro da pasta Desafio.
