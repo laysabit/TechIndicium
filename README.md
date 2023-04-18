@@ -15,7 +15,7 @@ O data pipeline ficou dividido em 4 tarefas sequenciais:
   
   No arquivo /desafio/dag/pipeline.py temos nosso arquivo principal onde está todas as tarefas sequenciais.
 
-<img src = https://user-images.githubusercontent.com/46203330/220226885-a088a002-ca73-43e4-9f2a-d35d8c568412.jpg />
+<img src = https://user-images.githubusercontent.com/46203330/232865165-6bdc7fac-3fbd-4dcb-8679-a18fbb3a1a0f.jpeg />
 
 <h3> Bancos de Dados </h3>
 
